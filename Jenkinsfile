@@ -4,9 +4,9 @@ node {
  
         echo "create a virtualenv"
         sh '''
-              pip install virtualenv
+              sudo pip install virtualenv
               cd DevOnTest
-              sudo /home/candidate/.local/bin/virtualenv venv
+              sudo virtualenv venv
               pip install -r requirements.txt
               source venv/bin/activate
            '''
