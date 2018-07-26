@@ -3,7 +3,9 @@ node {
    stage("SetUp"){
  
         echo "create a virtualenv"
-        sh '''cd DevOnTest
+        sh '''
+              git clone https://github.com/vk7282/DevOnTest.git
+              cd DevOnTest
               virtualenv venv
               pip install -r requirements.txt
               source venv/bin/activate
