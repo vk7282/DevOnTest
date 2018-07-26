@@ -1,6 +1,7 @@
 import os
 import unittest
- 
+import sys
+sys.path.append("..") 
 from .. import app
  
  
