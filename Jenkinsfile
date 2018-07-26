@@ -6,7 +6,7 @@ node {
         sh '''
               pip install virtualenv
               cd DevOnTest
-              virtualenv venv
+              /home/candidate/.local/bin/virtualenv venv
               pip install -r requirements.txt
               source venv/bin/activate
            '''
