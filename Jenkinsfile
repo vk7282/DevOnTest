@@ -1,12 +1,13 @@
+#!/bin/bash
 node {
    checkout scm
    stage("SetUp"){
  
         echo "create a virtualenv"
         sh '''
-              sudo pip install virtualenv
+              pip install virtualenv
               cd DevOnTest
-              sudo virtualenv venv
+              virtualenv venv
               pip install -r requirements.txt
               source venv/bin/activate
            '''
