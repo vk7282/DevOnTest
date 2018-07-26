@@ -2,7 +2,7 @@ node {
 
    stage("SetUp"){
  
-        echo "cool"
+        echo "coo"
 
    }
 
