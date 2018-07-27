@@ -5,7 +5,7 @@ node {
  
         echo "create a virtualenv"
         sh '''
-              cd DevOnTest
+              
               pip install -r requirements.txt
            '''
       
